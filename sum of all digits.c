@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int N, sum = 0;
+
+    scanf("%d", &N);
+
+    while (N > 0) {
+        sum += N % 10;  // add last digit
+        N = N / 10;     // remove last digit
+    }
+
+    printf("%d", sum);
+
+    return 0;
+}
+
